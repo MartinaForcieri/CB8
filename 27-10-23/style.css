@@ -1,0 +1,334 @@
+/* COLORS */
+/* #D81E5B */
+/* #B7FDFE */
+/* END COLORS */
+
+/* FONT */
+
+@import url("https://fonts.googleapis.com/css2? Famiglia & display-swap");
+/*per i titoli: font-family: 'Playpen Sans', cursive; */
+/*per i paragrafi: font-family: 'Nanum Gothic', sans-serif; */
+
+/*END FONT */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  background-color: #b7fdfe;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+  color: #b7fdfe;
+}
+
+/* TYPOGRAPY */
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.display {
+  font-size: 56px;
+}
+
+/* HEADER */
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #b7fdfe;
+}
+
+.header-wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  transition: color 0.35s ease;
+}
+
+.main-nav a:hover {
+  color: #b7fdfe;
+  text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #b7fdfe;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.hero-text {
+  width: 100%;
+}
+
+.hero-text .display {
+  margin-bottom: 20px;
+}
+
+span {
+  color: #d81e5b;
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-description {
+  margin-bottom: 20px;
+}
+
+@keyframes anim-dog {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.hero-image img {
+  width: 193px;
+  height: 300px;
+  animation: anim-dog 2s ease-in-out infinite alternate;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding-top: 0;
+  }
+  .hero-text,
+  .hero-image {
+    width: 50%;
+  }
+}
+
+/* HOBBIES */
+
+.hobby {
+  width: 100%;
+}
+
+.hobby-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hobby-text {
+  width: 100%;
+  padding: 20px;
+}
+
+.hobby-image {
+  width: 100%;
+}
+
+.hobby-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .hobby-text,
+  .hobby-image {
+    width: 50%;
+  }
+
+  .hobby-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.left-column .enpa {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #b7fdfe;
+  color: #d81e5b;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.right-column {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+
+  .right-column {
+    display: block;
+  }
+}
+
+.blog-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 300px;
+  border: 1px solid #d81e5b;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-card h3 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.blog-card p {
+  font-size: 18px;
+}
+
+.read-more-button {
+  display: inline-block;
+  background-color: #b7fdfe;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #b7fdfe;
+}
+
+.page-footer {
+  background-color: #b7fdfe;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.page-footer a {
+  color: #f9ebe0;
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  text-decoration: underline;
+}

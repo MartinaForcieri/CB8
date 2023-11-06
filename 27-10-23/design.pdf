@@ -1,0 +1,26 @@
+
+PALETTE
+
+#F9EBE0 (simil bianco) #D81E5B (rosso) #B7FDFE (celeste)
+
+FONT
+
+Per i titoli: font-family: 'Playpen Sans', cursive;
+Per i paragrafi: font-family: 'Nanum Gothic', sans-serif;
+
+TYPOGRAPHY
+
+h1:48px
+h2:40px
+h3:36px
+h4:28px
+h5:24px
+h6:22px
+display:56px
+p:18px
+
+
+CONTAINER										RESPONSIVE
+max-width:1440px								mobile < 768
+padding-left:20px								tablet da 768px a 1024px
+padding-right:20px								desktop > 1024
