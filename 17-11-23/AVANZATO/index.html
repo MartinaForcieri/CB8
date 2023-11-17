@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Contenitore per il popup -->
+    <div id="popup-container" class="hidden">
+      <p>Sei maggiorenne?</p>
+      <button onclick="chiudiPopup()">Si</button>
+      <button onclick="redirectNo()">No</button>
+    </div>
+
+    <!-- Contenuto della pagina -->
+    <div id="main-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        gravida, dui eu rutrum volutpat, eros nulla aliquam massa, vitae
+        bibendum justo neque eu justo.
+      </p>
+    </div>
+  </body>
+</html>
