@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+    <title>Esercizio 24-11-23</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="user-actions">
+        <a href="#">Sign Up</a>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </nav>
+    <section class="custom-section">
+      <div class="content">
+        <div class="text-content">
+          <h1>Go to the beach!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, adipisci.
+          </p>
+          <button class="get-started-btn">Get Started</button>
+        </div>
+        <div class="image-content">
+          <img src="./image/undraw_beach_day_cser.svg" alt="Beach Image" />
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="centered-content">
+        <h2>Choise</h2>
+        <p>Choise who you are</p>
+      </div>
+    </section>
+    <section class="griglia">
+      <ul>
+        <li>
+          <img
+            src="./image/undraw_male_avatar_g98d.svg"
+            style="width: 25%"
+            alt="Male"
+          />
+          <h4>Male</h4>
+        </li>
+        <li>
+          <img
+            src="./image/undraw_female_avatar_efig.svg"
+            style="width: 25%"
+            alt="Female"
+          />
+          <h4>Female</h4>
+        </li>
+        <li>
+          <img src="./image/undraw_dog_c7i6.svg" style="width: 25%" alt="Dog" />
+          <h4>Dog</h4>
+        </li>
+      </ul>
+    </section>
+    <section class="article-section">
+      <article class="article">
+        <div class="image-content">
+          <img src="./image/undraw_passing_by_0un9.svg" alt="PassingBy" />
+        </div>
+        <div class="text-content">
+          <h2>Go out with your dog!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            ducimus. Facilis necessitatibus ad corporis odit repudiandae
+            architecto porro? Quidem nulla veniam esse, blanditiis harum minus
+            id reiciendis perferendis ut dolorum.
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+    </section>
+    <section class="article-section2">
+      <div class="text-content2">
+        <h2>Good Doggy</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, eos
+          inventore. Consequuntur nisi obcaecati optio qui quisquam, quos
+          provident laudantium sapiente ipsam quam quasi, soluta vel voluptates
+          saepe error sequi!
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="image-container">
+        <img src="./image/undraw_good_doggy_re_eet7.svg" alt="Good Doggy" />
+      </div>
+    </section>
+    <section class="blog-section">
+      <div class="blog-header">
+        <h2>Il Tuo Blog</h2>
+        <p>Descrizione del blog centrata.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-item">
+          <img
+            src="https://fastly.picsum.photos/id/106/2592/1728.jpg?hmac=E1-3Hac5ffuCVwYwexdHImxbMFRsv83exZ2EhlYxkgY"
+            alt="Immagine 1"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            fuga?
+          </p>
+          <a href="#">Read more ➡️</a>
+        </div>
+
+        <div class="blog-item">
+          <img
+            src="https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU"
+            alt="Immagine 2"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis, repudiandae?
+          </p>
+          <a href="#">Read more ➡️</a>
+        </div>
+
+        <div class="blog-item">
+          <img
+            src="https://fastly.picsum.photos/id/248/3872/2592.jpg?hmac=_F3LsKQyGyWnwQJogUtsd_wyx2YDYnYZ6VZmSMBCxNI"
+            alt="Immagine 3"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            suscipit!
+          </p>
+          <a href="#">Read more ➡️</a>
+        </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="left-content">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us with any questions or concerns.</p>
+      </div>
+      <div class="right-content">
+        <form action="#" method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">SENDING</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-text">Made with ❤️ by Martina Forcieri!</p>
+    </footer>
+  </body>
+</html>
