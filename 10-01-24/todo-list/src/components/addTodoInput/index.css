@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+
+.AddTodoInput {
+  padding: 0 24px;
+  display: flex;
+  gap: 10px;
+}
+
+.AddTodoInput__input {
+  height: 40px;
+  width: 220px;
+  padding-left: 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.AddTodoInput__btn {
+  color: rgba(5, 5, 234, 0.915);
+  box-shadow: 0 0 4px rgba(108, 225, 225, 0.623);
+}

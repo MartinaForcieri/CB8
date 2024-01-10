@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/mixins.scss';
+
+.App {
+  @include flex-container(column, center, center, 40px)
+}
+
+.App h1 {
+  color: rgba(17, 17, 228, 0.901);
+  margin-left: 20%;
+  font-family: "Noto Sans", sans-serif;
+}
