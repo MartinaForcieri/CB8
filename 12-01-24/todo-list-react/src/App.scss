@@ -1,0 +1,10 @@
+@import "./assets/css/variables.scss";
+@import "./assets/css/mixins.scss";
+
+.App {
+  @include flex-container(row, inherit, inherit, 20px);
+
+  padding: 24px 0;
+  width: 80vw;
+  overflow-x: auto;
+}
