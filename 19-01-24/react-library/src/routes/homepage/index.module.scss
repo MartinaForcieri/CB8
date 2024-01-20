@@ -1,0 +1,80 @@
+.Homepage {
+  padding: 2.5rem;
+  background-color: #f1e7e7;
+
+  .h1 {
+    color: rgba(44, 44, 44, 0.877);
+    font-weight: 800;
+    font-size: 1.375rem;
+    font-family: "Raleway", sans-serif;
+    .colorLetters {
+      color: rgba(74, 158, 150, 0.329);
+
+      font-weight: 600;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.875rem;
+    gap: 1.25rem;
+  }
+
+  .form {
+    position: relative;
+    color: #aaa;
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .inputText {
+    width: 180px;
+    height: 2rem;
+    padding-left: 1.875rem;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+
+  .btn {
+    height: 2rem;
+    border-radius: 0.625rem;
+    padding: 0 1.25rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    background-color: #e5f8f1b6;
+
+    &:hover {
+      background-color: rgba(37, 109, 102, 0.37);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Homepage {
+    .container {
+      gap: 5rem;
+    }
+
+    .h1 {
+      font-size: 2.5rem;
+    }
+    .inputText {
+      width: 15.625rem;
+    }
+    .btn {
+      display: inline;
+      margin-left: 10px;
+    }
+  }
+}
