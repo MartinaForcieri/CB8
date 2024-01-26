@@ -1,0 +1,60 @@
+import { useEffect, useState } from "react";
+import Calendar from "react-calendar";
+import Confetti from "react-confetti";
+import "react-calendar/dist/Calendar.css";
+import Auguri from "./auguri";
+import React from "react";
+import Clock from "react-live-clock";
+
+<Auguri />;
+
+export default function Homepage() {
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [color, setColor] = useState("#ffffff");
+  const [pieces, setPieces] = useState(10);
+  const [posX, setPosX] = useState(0);
+  const [posY, setPosY] = useState(0);
+  // const [date, setDate] = useState(new Date())
+  // const [isUserOn, setUserOn] = useState(false)
+
+  // const onHandleDate = (date) => {
+  //   setDate(date)
+  // }
+
+  // const checkUserBirthday = () => {
+  //   if (date.getMonth() === 0 && date.getDate() === 23) {
+  //     setUserOn(true)
+  //   }
+  // }
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+    }
+  }, []);
+
+  const onHandleColorChange = (e) => setColor(e.target.value);
+
+  const onHandleSquare = (e) => {
+    setPosX(e.clientX - pieces / 2 - 20);
+    setPosY(e.clientY - pieces / 2 - 20);
+  };
+
+  return (
+    <div onMouseMove={onHandleSquare} style={{ height: "100vh" }}>
+      <Confetti width={500} height={300} colors={(green, blue, yellow)} />
+      <input type="text" value={color} onChange={onHandleColorChange} />
+      <Clock format={"HH:mm:ss"} ticking={true} timezone={"IT, SM, VA"} />
+      <div
+        style={{
+          border: `2px solid ${color}`,
+          width: `${pieces}px`,
+          height: `${pieces}px`,
+          transform: `translate(${posX}px, ${posY}px)`,
+        }}
+      ></div>
+    </div>
+  );
+}
