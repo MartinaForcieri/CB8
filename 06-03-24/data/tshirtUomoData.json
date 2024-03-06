@@ -1,0 +1,7 @@
+const tshirtUomoData = [
+  { id: 1, nome: "T-shirt Uomo 1", colore: "Blu", taglia: "M", prezzo: 20 },
+  { id: 2, nome: "T-shirt Uomo 2", colore: "Nero", taglia: "L", prezzo: 25 },
+  { id: 3, nome: "T-shirt Uomo 3", colore: "Rosso", taglia: "S", prezzo: 18 },
+];
+
+module.exports = tshirtUomoData;
